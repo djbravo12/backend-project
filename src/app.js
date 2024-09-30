@@ -7,7 +7,7 @@ const app = express();
 // app.listen(`${process.env.PORT || 6000}`);
 
 app.use(
-  cros({
+  cors({
     origin: process.env.CORS_ORIGIN,
     credentials: true,
   })
